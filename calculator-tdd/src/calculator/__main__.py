@@ -108,6 +108,10 @@ Examples:
             print(f"Error: {e}")
         except ZeroDivisionError as e:
             print(f"Error: Cannot divide by zero")
+        except TypeError as e:
+            print(f"Error: Type error - {e}")
+        except OverflowError as e:
+            print(f"Error: Calculation overflow - {e}")
 
 
 def main() -> None:
